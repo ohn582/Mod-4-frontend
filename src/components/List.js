@@ -1,19 +1,16 @@
 import React, { Component } from 'react'
 import '../App.css';
-import Market from '../components/Market'
-// import Review from '../components/Review'
+import Market from '../container/Market'
 
-class List extends Component {
-    render() {
-        
+class List extends Component {  
+    render(){
         return (
             <div>
                 <h1>Select:</h1>
                 <Market />
-                {/* <Review /> */}
             </div>
         )
-    }
+    }   
 }
 
 

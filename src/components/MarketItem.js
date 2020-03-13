@@ -2,15 +2,17 @@ import React from 'react'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { removeMarket } from '../actions/index'
-// import MarketShow from '../components/MarketShow'
+import Review from '../container/Review'
 
 
 
 
 //functional component is simple and it only has a return. it dosent have a state
-//functional components: deal that the fact the button exist & deal with user interacting the button 
+//functional components: deal that the fact the button exist & deal with user interacting the button
+
 
 const MarketItem = ({ market, removeMarket }) => {
+    // debugger
     return (
         <Router>
             <>
@@ -31,7 +33,10 @@ const MarketItem = ({ market, removeMarket }) => {
                     <br />
                     <Link to={`/markets/${market.id}`}><button className='info'>info</button></Link>
                     <Link to={`/fruits/${market.id}`}><button className='fruits'>fruits</button></Link>
-                    <Link to={`/review/${market.id}`}><button className='review'>Review</button></Link>
+
+
+                    <Route path={`/reviews/${market.id}`} component={Review} />
+                    <Link to={`/reviews/${market.id}`}><button className='review'>Review</button></Link>
                     <button onClick={() => removeMarket(market.id)} className='clear'>Delete</button>
                 </div>
             </>

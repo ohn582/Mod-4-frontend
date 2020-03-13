@@ -35,21 +35,17 @@
 //service side routing is what we use in ruby on rails
 
 
-import React, { Component } from 'react' //importing react from component //we need the component from react because thats what we are expending
+import React, { Component } from 'react' 
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import Home from './components/Home'  //we dont need .js because react is smart enought to know it's javascript
-
-
-//class component is a little bit more complicated: it needs to have a component, it needs too have two things, render & return
-//class components deal with state changes, life cycle methods & cares what button has clicked
+import Home from './components/Home'  
 
 
 class App extends Component { // name your components with an uppercase letter in react or else it will not reconize them
   render() {
     return (
       <Router>
-        <div> {/*all your information has to be in the div or else you'll get an JSX error*/}
+        <div> 
             <h1>Welcome to Fruity Market App</h1>
             <Route path="/home" component={Home} />
             <Link to="/home" className='home'>Home</Link>
@@ -62,5 +58,3 @@ class App extends Component { // name your components with an uppercase letter i
 export default App;
 
 
-
-//be mindful on creating a camle case because we are writting in a class in the same file as we were writting in html. we cant use class for our class peoples in our class definitions for our css

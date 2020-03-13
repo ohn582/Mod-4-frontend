@@ -12,13 +12,6 @@ export default(state= [], action) => {
             return [...newMarkets]
         default:
             return state
-
-
-
-
-
-        case "SET_REVIEWS":
-            return [...action.payload]
     }
 }
 
