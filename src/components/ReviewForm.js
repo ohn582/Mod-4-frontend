@@ -11,7 +11,8 @@ class ReviewForm extends Component {
         // this.input = React.createRef();    //creating a reference for our input so we actually where we're referencing our input field
         this.state = {
             name: "",
-            content: ""
+            content: "",
+            market_id:""
         }
     }
 
@@ -21,7 +22,8 @@ class ReviewForm extends Component {
         this.props.addNewReview(this.state); //this is state
         this.setState({
             name: "",
-            content: ""
+            content: "",
+            market_id:""
         })
     };
 
@@ -44,6 +46,10 @@ class ReviewForm extends Component {
                 <label className="in">Review:</label>
                 <br />
                 <textarea type='text' name='content' value={this.state.content} onChange={this.handleChange} />
+                <br />
+                <label className="in">id:</label>
+                <br />
+                <input type='number' name='market_id' value={this.state.market_id} onChange={this.handleChange} />
                 <br />
                 <button type='submit' value="Create a Review" className='create'>Create</button>
             </form>        

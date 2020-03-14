@@ -8,7 +8,7 @@ const ReviewItem = ({ review, removeReview }) => {
     return (
         <Router>
             <>
-                <Route path={`/reviews/${review.id}`}>
+                <Route path={`/reviews/${review.market_id}`}>
                     <div className='box'>      
                         <h4>{review.name}</h4>
                         <p>{review.content}</p>

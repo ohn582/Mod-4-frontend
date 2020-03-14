@@ -12,7 +12,7 @@ class Review extends Component {
     }
 
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
             review: []
         }
