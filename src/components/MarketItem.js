@@ -17,7 +17,7 @@ const MarketItem = ({ market, removeMarket }) => {
         <Router>
             <>
                 <div className='box'>
-                    <h4>{market.name}</h4>
+                    <h4>{market.id}: {market.name}</h4>
                     <Route path={`/markets/${market.id}`}>
                            {market.info}
                         <br />
