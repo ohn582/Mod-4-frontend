@@ -47,7 +47,7 @@ class ReviewForm extends Component {
                 <br />
                 <textarea type='text' name='content' value={this.state.content} onChange={this.handleChange} />
                 <br />
-                <label className="in"> Fruit #:</label>
+                <label className="in"> Market #:</label>
                 <br />
                 <input type='number' name='market_id' value={this.state.market_id} onChange={this.handleChange} />
                 <br />
