@@ -1,5 +1,5 @@
 export default (state = [], action) => {
-    switch (action.type) { //that is a standard for our state
+    switch (action.type) { 
         case "SET_REVIEWS":
             return [...action.payload]
         case "ADD_REVIEW":
