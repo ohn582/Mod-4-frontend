@@ -13,8 +13,7 @@ const ReviewItem = ({ review, removeReview }) => {
                         <h4>{review.name}</h4>
                         <p>{review.content}</p>
                         <button onClick={() => removeReview(review.id)} className='clear'>Delete</button>   
-                    </div> 
-                    <Link to={`/markets`}><button className='close'>Close</button></Link>
+                    </div>
                 </Route>
             </>
         </Router>
