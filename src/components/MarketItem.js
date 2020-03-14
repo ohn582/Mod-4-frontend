@@ -38,6 +38,7 @@ const MarketItem = ({ market, removeMarket }) => {
                     <Route path={`/reviews/${market.id}`} component={Review} />
                     <Link to={`/reviews/${market.id}`}><button className='review'>Review</button></Link>
                     <button onClick={() => removeMarket(market.id)} className='clear'>Delete</button>
+                    <Link to={`/markets`}><button className='er'>Exit Review</button></Link>
                 </div>
             </>
         </Router>
