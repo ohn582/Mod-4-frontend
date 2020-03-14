@@ -7,10 +7,6 @@ import Review from '../container/Review'
 
 
 
-//functional component is simple and it only has a return. it dosent have a state
-//functional components: deal that the fact the button exist & deal with user interacting the button
-
-
 const MarketItem = ({ market, removeMarket }) => {
     // debugger
     return (
