@@ -1,5 +1,4 @@
-//this is our basic example of our reducer.
-//reducer is what is going to manage our state for us 
+
 
 export default(state= [], action) => {
     switch(action.type){ //that is a standard for our state
