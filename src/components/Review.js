@@ -19,7 +19,7 @@ class Review extends Component {
 
     render(){
         // console.log(this.props.review)
-        const reviews = this.props.review.map((name, i) => <ReviewItem key={i} review={name} />) //you can keep the same attributes
+        const reviews = this.props.review.map((name, i) => <ReviewItem key={i} review={name} />) 
         return(
             <div></div>
         )
