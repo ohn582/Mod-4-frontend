@@ -6,9 +6,9 @@ import { connect } from 'react-redux'
 
 class ReviewForm extends Component {
     // debugger
-    constructor(props) {  //you need a constructor since you are using a class  //props are stateless components
+    constructor(props) {  
         super(props)
-        // this.input = React.createRef();    //creating a reference for our input so we actually where we're referencing our input field
+        // this.input = React.createRef();    
         this.state = {
             name: "",
             content: "",
@@ -60,5 +60,4 @@ class ReviewForm extends Component {
 
 export default connect(null, { addNewReview })(ReviewForm);
 
-//controlled components: will accept a value as a property and it triggers a callback method that's going to enact something on it.
-//uncontrolled components: don't hold state. you have to manually get the value every time you want to interact with it( this is the same thing as out vanilla javascript, you have to go out and get the value that we are actually getting from our form)
+
