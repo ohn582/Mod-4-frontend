@@ -15,22 +15,27 @@ class Market extends Component {
     }
 
                         
-    constructor(props) { 
-        super(props);   
-        this.state = {  
-            market: []
-        };
+//     constructor(props) { 
+//         super(props);   
+//         this.state = {  
+//             market: []
+//         };
+//     }
+    
+    
+    appleClick = () => {
+        console.log(this.props.markets.filter(market => market.fruits.includes('apples')))
     }
 
 
     render() {
         // console.log(this.props.markets)
-        const markets = this.props.markets.map((market, i) => <MarketItem key={i} market={market} />) //you can keep the same attributes
-        
+        const markets = this.props.markets.map((market, i) => <MarketItem key={i} market={market} />) 
 
         // debugger
         return (
             <div>
+                <button onClick={this.appleClick}>Apple</button>
                 <div className="wrapper">{markets}</div>
                 <Form handleOnSubmit={this.addNewTodo} />
             </div>
