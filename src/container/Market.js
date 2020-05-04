@@ -21,12 +21,6 @@ class Market extends Component {
 //             market: []
 //         };
 //     }
-    
-    
-    appleClick = () => {
-        console.log(this.props.markets.filter(market => market.fruits.includes('apples')))
-    }
-
 
     render() {
         // console.log(this.props.markets)
@@ -35,7 +29,6 @@ class Market extends Component {
         // debugger
         return (
             <div>
-                <button onClick={this.appleClick}>Apple</button>
                 <div className="wrapper">{markets}</div>
                 <Form handleOnSubmit={this.addNewTodo} />
             </div>
